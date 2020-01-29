@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Cole is the best</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title-text">¯\_(ツ)_/¯</h1>
+      <div id="menu">
+        <div class="title-text" onclick="handleClick()" id="desktop-menu">
+          MENU
+        </div>
+        <img
+          id="mobile-menu"
+          onclick="handleClick()"
+          src="./assets/iconfinder_menu-alt_134216.svg"
+        />
+      </div>
+      <div class="title-text dropdown hide-menu">
+        <p>Home</p>
+        <p>About</p>
+        <p>Products</p>
+        <p>Contact</p>
+      </div>
+    </header>
+    <section id="main-page">
+      <div class="row">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+      </div>
+      <div class="row">
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+      </div>
+      <div class="row">
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+      </div>
+    </section>
+  </body>
+  <script>
+    function handleClick() {
+      const dropdown = document.querySelector(".dropdown");
+      dropdown.classList.toggle("show-menu");
+      dropdown.classList.toggle("hide-menu");
+    }
+  </script>
+</html>
